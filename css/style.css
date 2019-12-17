@@ -1,0 +1,17 @@
+.results-container {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /*background-color: #2B4C39; */
+  background-color: orange;
+  background-color: #2b4c39;
+  border: 15px solid whitesmoke;
+  border-radius: 50px;
+  color: whitesmoke;
+  /* display: none;
+}
+.question-container {
+  display: none; */
+}
+body {
+  background-color: aqua;
+}
