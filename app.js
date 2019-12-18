@@ -40,7 +40,7 @@ $(document).ready(function() {
     location.reload();
   });
   //these are the element id's of the correct answers
-  const answerKey = ["#q1o4", "#q2o1", "#q3o3", "#q4o2"];
+  const answerKey = ["#q1o1", "#q2o2", "#q3o3", "#q4o2"];
 
   const questionNumbers = ["one", "two", "three", "four"];
 
@@ -48,10 +48,12 @@ $(document).ready(function() {
   function submitAnswers() {
     for (i = 0; i < answerKey.length; i++) {
       let correctAnswerSelected = $(answerKey[i]).is(":checked");
+
       let questionAnswered = $(
         '[name="question-' + questionNumbers[i] + '"]'
       ).is(":checked");
       if (correctAnswerSelected === true) {
+        console.log(correctAnswerSelected);
         correctAnswers++;
       }
       if (questionAnswered === true && correctAnswerSelected === false) {
